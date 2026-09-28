@@ -3,7 +3,7 @@
     "description": "Each kill spins ur POV.",
     "author": "STW__Smoke",
     "contact": "-",
-    "version": "1.0",
+    "version": "1.0.1",
     "blt_version": 2.0,
     "hooks": [
         {
