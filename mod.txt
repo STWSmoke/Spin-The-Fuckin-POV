@@ -1,0 +1,41 @@
+{
+    "name": "Spin the fuckin POV",
+    "description": "Each kill spins ur POV.",
+    "author": "STW__Smoke",
+    "contact": "-",
+    "version": "1.0",
+    "blt_version": 2.0,
+    "hooks": [
+        {
+            "hook_id": "lib/managers/menumanager",
+            "script_path": "lua/options.lua"
+        }
+    ],
+    "persist_scripts": [
+        {
+            "global": "SpinPOV",
+            "script_path": "lua/main.lua"
+        }
+    ],
+    "keybinds": [
+        {
+            "keybind_id": "speenpov_reset_orientation",
+            "name": "Reset camera orientation",
+            "description": "Reset the accumulated camera roll.",
+            "script_path": "lua/reset.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "default": "r"
+        }
+    ],
+    "updates": [
+        {
+            "identifier": "spinpov",
+            "provider": "meta_file",
+            "meta": "https://raw.githubusercontent.com/STWSmoke/Spin-The-Fuckin-POV/main/update.json",
+            "download": "https://github.com/STWSmoke/Spin-The-Fuckin-POV/archive/refs/heads/main.zip",
+            "patchnotes": "https://github.com/STWSmoke/Spin-The-Fuckin-POV/releases",
+            "install_folder": "spin the fuckin POV"
+        }
+    ]
+}
